@@ -1,2 +1,4 @@
 manolño:$2y$10$DI9M3jYUu91mLgyXyM9EqeDecfda1u1lsbXskLwuMEORtuBpoH1iO
 paco:$2y$10$7VBmnefYqWVEQpVCu1SnKOGzsxFDChIcv08MlO9YxDb6MmiDVn6ue
+alberto:$2y$10$XfCZAHG7r0MWws4VJzJYYOIUyKCTMyj6Q3dv7ElR7rZhTwx6KvkqK
+hola:$2y$10$jlMVuS2w9MuUaBedct/thu2PpyaEAyjdfFH63XCuCwyRMWyQkS4b6
