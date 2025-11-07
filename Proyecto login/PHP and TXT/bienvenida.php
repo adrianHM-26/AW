@@ -11,9 +11,19 @@ exit;
 <meta charset="UTF-8">
 <title>Bienvenida</title>
 </head>
-<body>
+<link rel="stylesheet" href="/AW/Proyecto login/CSS/Estilos.css">
+<body class="Fbienvenida">
+    <div class="Bienvenida">
+
 <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?> 🎉</h1>
+</div>
+<div class="Btexto">
+
 <p>Has iniciado sesión correctamente.</p>
-<p><a href="logout.php">Cerrar sesión</a></p>
+
+  </div>
+  <div>
+<p class="Cerrar"><a href="logout.php">Cerrar sesión</a></p>
+<div></div>
 </body>
 </html>
