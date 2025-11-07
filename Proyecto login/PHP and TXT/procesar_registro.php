@@ -5,5 +5,23 @@ $password = $_POST['password'];
 $file = fopen("usuarios.txt", "a");
 fwrite($file, $usuario . ":" . password_hash($password, PASSWORD_DEFAULT) . "\n");
 fclose($file);
-echo "<h1>Usuario registrado correctamente</h1>";
-echo "<p><a href='login.php'>Iniciar sesión</a></p>";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/AW/Proyecto login/CSS/Estilos.css">
+</head>
+<body class="procesarR">
+
+<div class="centrarR">
+<h1>Usuario registrado correctamente</h1>
+</div>
+<div class="Isesion">
+<p><a href='login.php'>Iniciar sesión</a></p>
+</div>
+</body>
+</html>

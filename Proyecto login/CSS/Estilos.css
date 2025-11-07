@@ -71,5 +71,28 @@ background-color: #4C829B;
 /* Archivo de procesar registro*/
 
 .procesarR {
-    background-color: aquamarine;
+    background-color: #A3D5D3;
+}
+
+.centrarR {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #1C2541;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Isesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1C2541;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Archivo de procesar login*/
+
+.fondoPL {
+    background-color: #B3DDF2;
 }
