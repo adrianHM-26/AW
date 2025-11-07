@@ -31,10 +31,10 @@ exit;
 <body class="fondoPL">
 <div>
 
-<h1>Usuario o contraseña incorrectos</h1>
+<h1 class="centrarPL">Usuario o contraseña incorrectos</h1>
 </div>
 <div>
-<p><a href='login.php'>Volver a intentar</a></p>
+<p class="IsesionPL"><a href='login.php'>Volver a intentar</a></p>
 </div>
 
 </body>
