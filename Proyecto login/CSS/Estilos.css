@@ -1,24 +1,33 @@
 /* Archivo de registro*/
 .fondo{
     background-color:#BFD8D2;
+    display: flex;
+  justify-content: center;     
+  align-items: center;         
+  flex-direction: column;      
+  height: 75vh;         
 }
 .titulo{
-    align-items: center;
     display: flex;
-    justify-content: center;
-    height: 25vh;
-    font-size: 25px;
+  justify-content: center;     
+  align-items: center;         
+  flex-direction: column;      
+  height: 75vh;      
     color: #293033;
 }
 .Creacion {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
     color:#293033;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-
+    background-color: #DCEFF2 ;
+     border-radius: 15px;
+  box-shadow: 0 8px 20px #0D1B2A;
+  height: 20vh;
 }
 .inicio{
      display: flex;
@@ -35,27 +44,36 @@
 
 /* Archivo de login*/
 .loginFondo {
-     background-color: #DCEFF2; /*#355C7D*/
-
+     background-color: #DCEFF2; 
+    display: flex;
+  justify-content: center;     
+  align-items: center;         
+  flex-direction: column;      
+  height: 75vh;               
 }
 
 .loginT {
    align-items: center;
     display: flex;
     justify-content: center;
-    height: 25vh;
+    flex-direction: column;
+    height: 75vh;
     font-size: 25px;
     color: #0D1B2A;
 }
 
 .loginCrear {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    color: #1C2541;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #BFD8D2;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px #0D1B2A;
+  height: 20vh;
 }
 .crearCuenta{
      display: flex;

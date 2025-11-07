@@ -12,6 +12,7 @@
  </div>
 
  <div class="loginCrear">
+
  <form action="procesar_login.php" method="post">
  <label>Usuario:</label>
  <input type="text" name="usuario" required><br><br>
@@ -19,7 +20,13 @@
  <input type="password" name="password" required><br><br>
  <button class="button" type="submit">Entrar</button>
  </form>
+
  </div>
- <p class="crearCuenta">¿No tienes cuenta? <a href="registro.php">Regístrate aquí</a></p>
+ <div class="crearCuenta">
+
+
+ <p>¿No tienes cuenta? <a href="registro.php">Regístrate aquí</a></p>
+
+  </div>
 </body>
 </html>
