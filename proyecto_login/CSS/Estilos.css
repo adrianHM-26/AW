@@ -1,6 +1,6 @@
 /* Archivo de registro*/
 .fondo{
-    background-color:#BFD8D2;
+    background-color:#1E1E2F;
     display: flex;
   justify-content: center;     
   align-items: center;         
@@ -13,7 +13,7 @@
   align-items: center;         
   flex-direction: column;      
   height: 75vh;      
-    color: #293033;
+    color: #E5E5E5;
 }
 .Creacion {
     display: flex;
@@ -23,28 +23,29 @@
   text-align: center;
   width: 300px;
   padding: 20px;
-    color:#293033;
-    background-color: #DCEFF2 ;
+    color:#A1A1B5;
+    background-color: #2C2C3C ;
      border-radius: 15px;
-  box-shadow: 0 8px 20px #0D1B2A;
-  height: 29vh;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  height: 32vh;
 }
 .inicio{
      display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(0, 0, 0);
+    color:#A1A1B5;
 
 }
 .boton{
-    background-color:#4A6470;
+    background-color:#3A7CA5;
+    color: white;
  
 }
 
 
 /* Archivo de login*/
 .loginFondo {
-     background-color: #DCEFF2; 
+     background-color: #1E1E2F; 
     display: flex;
   justify-content: center;     
   align-items: center;         
@@ -59,7 +60,7 @@
     flex-direction: column;
     height: 75vh;
     font-size: 25px;
-    color: #0D1B2A;
+    color: #E5E5E5;
 }
 
 .loginCrear {
@@ -68,28 +69,30 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: #A1A1B5;
   width: 300px;
   padding: 20px;
-  background-color: #BFD8D2;
+  background-color: #2C2C3C;
   border-radius: 15px;
-  box-shadow: 0 8px 20px #0D1B2A;
-  height: 29vh;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  height: 32vh;
 }
 .crearCuenta{
      display: flex;
     justify-content: center;
     align-items: center;
-    color:#1C2541;
+    color:#A1A1B5;
 }
 .button {
-background-color: #4C829B;
+background-color: #3A7CA5;
+color: white;
 }
 
 
 /* Archivo de procesar registro*/
 
 .procesarR {
-    background-color: #A3D5D3;
+    background-color: #1E1E2F;
 }
 
 .centrarR {
@@ -97,7 +100,7 @@ background-color: #4C829B;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    color: #1C2541;
+    color: #E5E5E5;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -105,21 +108,21 @@ background-color: #4C829B;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1C2541;
+    color: #A1A1B5;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Archivo de procesar login*/
 
 .fondoPL {
-    background-color: #B3DDF2;
+    background-color: #1E1E2F;
 }
 
 .IsesionPL {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1C2541;
+    color: #E5E5E5;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -129,14 +132,14 @@ background-color: #4C829B;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    color: #1C2541;
+    color: #A1A1B5;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Archivo de Bienvenida*/
 
 .Fbienvenida {
-    background-color: #D0F0E0;
+    background-color: #1E1E2F;
 }
 
 .Bienvenida {
@@ -144,7 +147,7 @@ background-color: #4C829B;
     justify-content: center;
     align-items: center;
     height: 25vh;
-    color: #1C2541;
+    color: #E5E5E5;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -153,17 +156,18 @@ background-color: #4C829B;
  display: flex;
     justify-content: center;
     align-items: center;
-    color: #1C2541;
+    color: #A1A1B5;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     height: 15vh;
 }
 
 .Cerrar {
+    background-color: #1E1E2F;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1C2541;
+    color: #E5E5E5;
     height: 15vh;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;

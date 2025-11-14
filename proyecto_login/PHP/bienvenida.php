@@ -13,12 +13,15 @@ if (!isset($_SESSION['usuario'])) {
  <link rel="stylesheet" href="/AW/proyecto_login/CSS/Estilos.css">
 </head>
 <body class="Fbienvenida">
+
  <div class="Bienvenida">
    <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?> 🎉</h1>
  </div>
+ 
  <div class="Btexto">
    <p>Has iniciado sesión correctamente.</p>
  </div>
+
  <div class="Cerrar">
    <p><a href="logout.php">Cerrar sesión</a></p>
  </div>

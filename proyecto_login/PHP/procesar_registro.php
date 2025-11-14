@@ -1,29 +1,44 @@
 <?php
+// Mostrar errores en pantalla para depuración
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 include "conexion.php";
 
-$usuario = $_POST['usuario'] ?? '';
+$usuario  = $_POST['usuario'] ?? '';
 $password = $_POST['password'] ?? '';
 
 $mensaje = "";
-$exito = false;
+$exito   = false;
 
 if ($usuario !== '' && $password !== '') {
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-    $stmt = $conn->prepare("INSERT INTO usuarios (usuario, password) VALUES (?, ?)");
-    $stmt->bind_param("ss", $usuario, $hash);
+    // Verificar si el usuario ya existe
+    $check = $conn->prepare("SELECT id FROM usuarios WHERE usuario = ?");
+    $check->bind_param("s", $usuario);
+    $check->execute();
+    $check->store_result();
 
-    if ($stmt->execute()) {
-        $mensaje = "Usuario registrado correctamente 🎉";
-        $exito = true;
+    if ($check->num_rows > 0) {
+        $mensaje = "El nombre de usuario ya está registrado ❌";
     } else {
-        if ($stmt->errno === 1062) {
-            $mensaje = "Error: el usuario ya existe ❌";
+        // Insertar nuevo usuario
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $stmt = $conn->prepare("INSERT INTO usuarios (usuario, password) VALUES (?, ?)");
+        $stmt->bind_param("ss", $usuario, $hash);
+
+        if ($stmt->execute()) {
+            $mensaje = "Usuario registrado correctamente 🎉";
+            $exito   = true;
         } else {
             $mensaje = "Error inesperado: " . htmlspecialchars($stmt->error);
         }
+        $stmt->close();
     }
-    $stmt->close();
+    $check->close();
+} else {
+    $mensaje = "Datos incompletos ❌";
 }
+
 $conn->close();
 ?>
 
