@@ -47,7 +47,7 @@ $conn->close();
 <head>
   <meta charset="UTF-8">
   <title>Procesar registro</title>
-  <link rel="stylesheet" href="/AW/Proyecto login/CSS/Estilos.css">
+  <link rel="stylesheet" href="/AW/Proyecto_BBDD/CSS/Estilos.css">
 </head>
 <body class="procesarR">
 

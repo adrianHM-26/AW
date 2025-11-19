@@ -10,7 +10,7 @@ if (!isset($_SESSION['usuario'])) {
 <head>
  <meta charset="UTF-8">
  <title>Bienvenida</title>
- <link rel="stylesheet" href="/AW/proyecto_login/CSS/Estilos.css">
+ <link rel="stylesheet" href="/AW/Proyecto_BBDD/CSS/Estilos.css">
 </head>
 <body class="Fbienvenida">
 
