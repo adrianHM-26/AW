@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "adrian"; // o el usuario que hayas creado
-$pass = "yo";     // o la contraseña que hayas asignado
+$user = "adrian";
+$pass = "yo";
 $db = "proyecto_login";
 
 $conn = new mysqli($host, $user, $pass, $db);

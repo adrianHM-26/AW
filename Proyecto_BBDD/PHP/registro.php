@@ -15,8 +15,19 @@
      <input type="text" name="usuario" required><br><br>
      <label>Contraseña:</label>
      <input type="password" name="password" required><br><br>
-     <button class="boton" type="submit">Registrarse</button>
+     <button  id="boton" class="boton" type="submit">Registrarse</button>
    </form>
+
+<script>
+  const boton = document.getElementById("boton");
+  boton.addEventListener("mouseover", () => {
+    boton.style.boxShadow = "0 0 10px #2a5fd1ff";
+  });
+  boton.addEventListener("mouseout", () => {
+    boton.style.boxShadow = "none";
+  });
+</script>
+
    <p class="inicio">¿Ya tienes cuenta? <a href="login.php">Inicia sesión aquí</a></p>
  </div>
 </body>

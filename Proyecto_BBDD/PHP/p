@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Prueba reflejo</title>
+<style>
+body {
+  background: #1E1E2F;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.titulo h1 {
+  font-size: 3em;
+  color: #E5E5E5;
+  position: relative;
+  display: inline-block;
+}
+
+/* Reflejo debajo */
+.titulo h1::after {
+  content: "Registro de usuario"; /* texto fijo para probar */
+  position: absolute;
+  top: 100%;   /* justo debajo */
+  left: 0;
+  width: 100%;
+  color: #E5E5E5;
+  transform: scaleY(-1);
+  opacity: 0.3;
+}
+</style>
+</head>
+<body>
+<div class="titulo">
+  <h1>Registro de usuario</h1>
+</div>
+</body>
+</html>
