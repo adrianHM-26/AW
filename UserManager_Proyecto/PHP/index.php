@@ -1,25 +1,22 @@
-<?php session_start(); ?>
+<?php
+require_once __DIR__ . '/conexion/auth.php';
+?>
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>UserManager</title>
-</head>
+<html>
+<head><meta charset="UTF-8"><title>Inicio</title></head>
 <body>
-  <h1>Gestión de Usuarios</h1>
-  <ul>
-    <li><a href="list.php">📋 Listar Usuarios</a></li>
-    <li><a href="create.php">➕ Registrarse</a></li>
-    <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin'): ?>
-      <li><a href="list.php">✏️ Modificar Usuario</a></li>
-      <li><a href="list.php">🗑️ Eliminar Usuario</a></li>
-    <?php endif; ?>
-    <?php if (isset($_SESSION['nombre'])): ?>
-      <li>👤 Bienvenido <?= $_SESSION['nombre'] ?> (<?= $_SESSION['rol'] ?>)</li>
-      <li><a href="logout.php">Cerrar Sesión</a></li>
+    <h1>UserManager</h1>
+
+    <?php if (isLoggedIn()): ?>
+        <p>Hola, <?= htmlspecialchars(currentUser()['nombre']) ?></p>
+        <p><a href="dashboard.php">Dashboard</a></p>
+        <?php if (isAdmin()): ?>
+            <p><a href="admin/users_list.php">Administrar usuarios</a></p>
+        <?php endif; ?>
+        <p><a href="logout.php">Cerrar sesión</a></p>
     <?php else: ?>
-      <li><a href="login.php">Iniciar Sesión</a></li>
+        <p><a href="login.php">Iniciar sesión</a></p>
+        <p><a href="register.php">Registrarse</a></p>
     <?php endif; ?>
-  </ul>
 </body>
 </html>
