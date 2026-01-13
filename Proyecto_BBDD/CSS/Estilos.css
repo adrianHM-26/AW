@@ -1,0 +1,276 @@
+/* Archivo de registro*/
+.fondo{
+    background-color:#1E1E2F;
+    display: flex;
+  justify-content: center;     
+  align-items: center;         
+  flex-direction: column;      
+  height: 75vh;         
+}
+.titulo{
+  text-align: center;
+  color: #E5E5E5;
+  font-size: 25px;
+  padding-bottom: 50px; /* espacio para que se vea el reflejo */
+}
+.titulo h1 {
+  font-size: 35px;
+  color: #E5E5E5;
+  position: relative;
+  display: inline-block;
+
+  /* Animación de ondulación */
+  animation: waveText 4s infinite ease-in-out;
+}
+
+/* Definición de la animación */
+@keyframes waveText {
+  0%   { transform: translateY(0px) skewX(0deg); }
+  25%  { transform: translateY(-2px) skewX(2deg); }
+  50%  { transform: translateY(0px) skewX(-2deg); }
+  75%  { transform: translateY(2px) skewX(1deg); }
+  100% { transform: translateY(0px) skewX(0deg); }
+}
+
+
+.titulo h1::after {
+  content: "Registro de usuario";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 35px; /* más pequeño */
+  color: #E5E5E5;
+  transform: scaleY(-1);
+  opacity: 0.5;
+
+  /* Degradado que se desvanece */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+
+  /* Animación ondulada */
+  animation: ripple 4s infinite linear;
+}
+
+/* Definición de la animación */
+@keyframes ripple {
+  0%   { transform: scaleY(-1) translateY(0px) skewX(0deg); }
+  25%  { transform: scaleY(-1) translateY(2px) skewX(2deg); }
+  50%  { transform: scaleY(-1) translateY(0px) skewX(-2deg); }
+  75%  { transform: scaleY(-1) translateY(-2px) skewX(1deg); }
+  100% { transform: scaleY(-1) translateY(0px) skewX(0deg); }
+}
+
+
+
+
+.Creacion {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+    color:#A1A1B5;
+    background-color: #2C2C3C ;
+     border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  height: 32vh;
+}
+.inicio{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#A1A1B5;
+
+}
+
+.boton{
+    background-color:#3A7CA5;
+    color: white;
+ 
+}
+
+
+/* Archivo de login*/
+.loginFondo {
+     background-color: #1E1E2F; 
+    display: flex;
+  justify-content: center;     
+  align-items: center;         
+  flex-direction: column;      
+  height: 75vh;               
+}
+
+.loginT {
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+    font-size: 25px;
+    color: #E5E5E5;
+}
+.loginT h1 {
+  font-size: 35px;
+  color: #E5E5E5;
+  position: relative;
+  display: inline-block;
+
+  /* Animación de ondulación */
+  animation: waveText 4s infinite ease-in-out;
+}
+
+/* Definición de la animación */
+@keyframes waveText {
+  0%   { transform: translateY(0px) skewX(0deg); }
+  25%  { transform: translateY(-2px) skewX(2deg); }
+  50%  { transform: translateY(0px) skewX(-2deg); }
+  75%  { transform: translateY(2px) skewX(1deg); }
+  100% { transform: translateY(0px) skewX(0deg); }
+}
+
+
+.loginT h1::after {
+  content: "Iniciar sesión";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 35px; /* más pequeño */
+  color: #E5E5E5;
+  transform: scaleY(-1);
+  opacity: 0.5;
+
+  /* Degradado que se desvanece */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+
+  /* Animación ondulada */
+  animation: ripple 4s infinite linear;
+}
+
+/* Definición de la animación */
+@keyframes ripple {
+  0%   { transform: scaleY(-1) translateY(0px) skewX(0deg); }
+  25%  { transform: scaleY(-1) translateY(2px) skewX(2deg); }
+  50%  { transform: scaleY(-1) translateY(0px) skewX(-2deg); }
+  75%  { transform: scaleY(-1) translateY(-2px) skewX(1deg); }
+  100% { transform: scaleY(-1) translateY(0px) skewX(0deg); }
+}
+
+.loginCrear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #A1A1B5;
+  width: 300px;
+  padding: 20px;
+  background-color: #2C2C3C;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  height: 32vh;
+}
+.crearCuenta{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#A1A1B5;
+
+}
+
+
+.button {
+background-color: #3A7CA5;
+color: white;
+}
+
+
+/* Archivo de procesar registro*/
+
+.procesarR {
+    background-color: #1E1E2F;
+}
+
+.centrarR {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #E5E5E5;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Isesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A1A1B5;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Archivo de procesar login*/
+
+.fondoPL {
+    background-color: #1E1E2F;
+}
+
+.IsesionPL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centrarPL {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #A1A1B5;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Archivo de Bienvenida*/
+
+.Fbienvenida {
+    background-color: #1E1E2F;
+}
+
+.Bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    color: #E5E5E5;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Btexto {
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A1A1B5;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 15vh;
+}
+
+.Cerrar {
+    background-color: #1E1E2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5;
+    height: 15vh;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
