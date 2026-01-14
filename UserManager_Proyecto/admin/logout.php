@@ -5,7 +5,7 @@ require_once __DIR__ . '/../includes/config.php';
 
 // Verificar que está logueado
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../usermanager/login.php");
+    header("Location: ../UserManager/login.php");
     exit();
 }
 
@@ -16,6 +16,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirigir al login principal
-header("Location: ../UserManager/login.php?");
+header("Location: ../UserManager/login.php");
 exit();
 ?>

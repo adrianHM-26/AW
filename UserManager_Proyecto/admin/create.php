@@ -22,7 +22,7 @@ if (!isLoggedIn() || !isAdmin()) {
             <div class="user-info">
                 <a href="index.php" class="btn">Lista Usuarios</a>
                 <a href="../usermanager/dashboard.php" class="btn">Dashboard</a>
-                <a href="logout.php" class="btn btn-red">Salir</a> <!-- AÑADIDO -->
+                <a href="logout.php" class="btn btn-red">Salir</a>
             </div>
         </div>
     </div>

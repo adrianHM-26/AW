@@ -29,8 +29,8 @@ $result = $conn->query($sql);
             <a href="index.php" class="logo">UserManager - Admin</a>
             <div class="user-info">
                 <?php echo htmlspecialchars($_SESSION['user_nombre']); ?>
-                <a href="../usermanager/dashboard.php" class="btn">Dashboard</a>
-                <a href="logout.php" class="btn btn-red">Salir Admin</a> <!-- CAMBIADO -->
+                <a href="../UserManager/dashboard.php" class="btn">Dashboard</a>
+                <a href="logout.php" class="btn btn-red">Salir Admin</a> 
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@ $result = $conn->query($sql);
         
         <div class="buttons">
             <a href="create.php" class="btn btn-green">Crear Usuario</a>
-            <a href="../usermanager/dashboard.php" class="btn">Volver</a>
+            <a href="../UserManager/dashboard.php" class="btn">Volver</a>
         </div>
         
         <h2>Usuarios Registrados</h2>
